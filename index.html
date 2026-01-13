@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Abdul Tech Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body
+
+  <header class="hero">
+    <h1>Abdul Tech Services</h1>
+    <p>Fast • Reliable • Affordable Phone Repair</p>
+     <a href="https://wa.me/2348069535364" class="whatsapp-btn">
+       Chat on WhatsApp
+       </a>
+  </header>
+
+<section class="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery-box">
+    <img src="Image/img1.jpg" alt="Screen Repair">
+    <img src="Image/img2.jpg" alt="Battery Replacement">
+    <img src="Image/img3.jpg" alt="Software Fix">
+  </div>
+</section>
+
+<section class="location">
+  <h2>Our Location</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62630.19077300144!2d7.6281002!3d11.158961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b287cd96855119%3A0x34aa84d678555598!2sGaladima%20Road!5e0!3m2!1sen!2sng!4v1768248768849!5m2!1sen!2sng"
+    width="100%"
+    height="250"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</section>
+
+    <div class="service-box">
+      <p>📱 Screen Repair</p>
+      <p>🔋 Battery Replacement</p>
+      <p>💻 Software Fix</p>
+      <p>🔓 Phone Unlocking</p>
+    </div>
+  </section>
+
+  <section class="why">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>✔ Fast service</li>
+      <li>✔ Affordable prices</li>
+      <li>✔ Trusted technicians</li>
+      <li>✔ Quality parts</li>
+    </ul>
+  </section>
+
+<section class="contact">
+  <h2>Contact Me</h2>
+  <p>WhatsApp: +2348069535364</p>
+  <p>Email: Shamoabdulrahman57@gmail.com</p>
+</section>
+
+<section class="trust">
+  <h2>Why Clients Trust Me</h2>
+  <p>✔ Fast delivery</p>
+  <p>✔ Mobile-friendly designs</p>
+  <p>✔ Affordable pricing</p>
+  <p>✔ After-delivery support</p>
+</section>
+
+<button onclick="payWithPaystack()">Pay Now</button>
+
+  <footer>
+    <p>© 2026 Abdul Tech Services</p>
+  </footer>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+<script>
+  function payWithPaystack() {
+    var handler = PaystackPop.setup({
+      keyhttps://paystack.shop/pay/a1-238z2kv', // REPLACE with your PUBLIC KEY
+      email: 'customer@email.com',
+      amount: 10000, // amount in kobo (₦10,000)
+      currency: 'NGN',
+      callback: function(response) {
+        alert('Payment successful! Reference: ' + response.reference);
+      },
+      onClose: function() {
+        alert('Payment cancelled');
+      }
+    });
+    handler.openIframe();
+  }
+</script>
+
+<script src="script.js"></script>
+
+</body>
+<a href="https://wa.me/2348069535364" class="whatsapp-btn" target="_blank">
+  💬 Chat on WhatsApp
+</a>
+</html>
